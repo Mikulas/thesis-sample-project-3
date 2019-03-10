@@ -4,6 +4,7 @@ pipeline {
         stage('Jekyll Build') {
             agent {
                 docker 'docker:18.09'
+                args '-u root:sudo'
             }
             steps {
                 checkout scm
