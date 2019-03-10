@@ -3,8 +3,10 @@ pipeline {
     stages {
         stage('Jekyll Build') {
             agent {
-                docker 'docker:18.09'
-                args '-u root:sudo'
+                docker {
+                    image 'docker:18.09'
+                    args '-u root:sudo'
+                }
             }
             steps {
                 checkout scm
