@@ -12,7 +12,7 @@ pipeline {
                 checkout scm
                 sh 'whoami'
                 sh 'apk add --no-cache make bash'
-                sh 'make build'
+                sh 'CI_COMMIT_SHA="$GIT_COMMIT" make build'
             }
         }
         stage('Deploy') {
