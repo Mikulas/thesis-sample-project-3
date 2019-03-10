@@ -7,6 +7,7 @@ pipeline {
             }
             steps {
                 checkout scm
+                sh 'apk add --no-cache make'
                 sh 'make build'
             }
         }
