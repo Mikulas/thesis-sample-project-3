@@ -11,7 +11,7 @@ pipeline {
             steps {
                 checkout scm
                 sh 'whoami'
-                sh 'apk add --no-cache make'
+                sh 'apk add --no-cache make bash'
                 sh 'make build'
             }
         }
