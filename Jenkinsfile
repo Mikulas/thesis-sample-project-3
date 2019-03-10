@@ -17,7 +17,10 @@ pipeline {
         }
         stage('Deploy') {
             agent {
-                docker 'ditemikuthesisdemo/deploy:1.0'
+                docker {
+                    image 'ditemikuthesisdemo/deploy:1.0'
+                    args '--network=host'
+                }
             }
             steps {
                 sh 'make deploy'
