@@ -5,7 +5,7 @@ pipeline {
             agent {
                 docker {
                     image 'docker:18.09'
-                    args '-u root:root'
+                    args '-u root:root --network=host'
                 }
             }
             steps {
