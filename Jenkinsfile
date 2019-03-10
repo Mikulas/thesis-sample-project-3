@@ -5,7 +5,7 @@ pipeline {
             agent {
                 docker {
                     image 'docker:18.09'
-                    args '-u root:sudo'
+                    args '-u root:root'
                 }
             }
             steps {
