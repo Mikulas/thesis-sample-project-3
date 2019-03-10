@@ -45,7 +45,7 @@ resources:
   source:
     username: root
     password: CVUT_FIT
-    repository: registry.gitlab.ditemiku.local:4567/root/project-3
+    repository: 10.0.0.10:4567/root/project-3
 
 jobs:
 - name: build
