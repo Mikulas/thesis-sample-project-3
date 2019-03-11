@@ -10,6 +10,7 @@ steps:
     tags: latest
     repo: root/project-3
     registry: registry.gitlab.ditemiku.local:4567
+    insecure: true
 
 - name: deploy
   image: eeacms/rsync:1.2
