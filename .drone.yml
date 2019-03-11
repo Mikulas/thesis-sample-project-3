@@ -8,7 +8,7 @@ steps:
     username: root
     password: CVUT_FIT
     tags: latest
-    repo: root/project-3
+    repo: registry.gitlab.ditemiku.local:4567/root/project-3
     registry: registry.gitlab.ditemiku.local:4567
     insecure: true
 
