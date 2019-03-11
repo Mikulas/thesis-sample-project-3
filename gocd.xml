@@ -7,8 +7,9 @@
     <jobs>
       <job name="BuildJob">
         <tasks>
-          <exec command="make">
-            <arg>build</arg>
+          <exec command="sh">
+            <arg>-c</arg>
+            <arg>CI_COMMIT_SHA="$GO_REVISION" make build</arg>
             <runif status="passed" />
           </exec>
           <exec command="make">
