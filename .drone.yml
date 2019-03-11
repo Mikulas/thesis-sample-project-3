@@ -5,7 +5,7 @@ steps:
 - name: build-image
   image: plugins/docker
   settings:
-    username: ditemikuthesisdemo
+    username: root
     password: CVUT_FIT
     tags: latest
     repo: root/project-3
