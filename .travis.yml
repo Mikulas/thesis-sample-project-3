@@ -2,5 +2,5 @@ services:
   - docker
 
 script:
-  - make build
+  - CI_COMMIT_SHA="$TRAVIS_COMMIT" make build
   - echo "Deploy step would be here"

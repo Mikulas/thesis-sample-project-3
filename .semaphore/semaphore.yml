@@ -12,7 +12,7 @@ blocks:
         - name: build
           commands:
           - checkout
-          - make build
+          - CI_COMMIT_SHA="$REVISION" make build
 
   - name: Deploy
     task:
