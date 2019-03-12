@@ -1,0 +1,6 @@
+services:
+  - docker
+
+script:
+  - make build
+  - echo "Deploy step would be here"
